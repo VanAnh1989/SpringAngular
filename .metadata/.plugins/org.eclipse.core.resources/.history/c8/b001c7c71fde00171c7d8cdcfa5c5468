@@ -1,0 +1,27 @@
+package com.share.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.share.farmer.model.User;
+
+import scala.annotation.meta.setter;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RestController
+public class HelloController {
+    
+    @RequestMapping("/")
+    public ModelAndView index() {
+        return new ModelAndView("index");
+    }
+    
+    @RequestMapping("/getUser")
+    public User getUser() {
+    	User user = new User();
+    	user.setUser("vananh");
+    	user.setPass("12345");
+    	return user;
+    }
+}

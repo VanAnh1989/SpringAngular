@@ -1,7 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { HeaderModule } from './header/header.module';
-
+import { ContentModule } from './content/content.module';
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    HeaderModule
+    HeaderModule,ContentModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

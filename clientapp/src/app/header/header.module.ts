@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { ShareModule } from '../sharemodule/share.module';
 import { HeaderComponent } from './header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -9,7 +10,7 @@ import { HeaderComponent } from './header.component';
     HeaderComponent
   ],
   imports: [
-    ShareModule
+    ShareModule , HttpClientModule
   ],
   exports : [
       HeaderComponent
