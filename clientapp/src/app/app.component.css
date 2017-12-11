@@ -1,6 +1,6 @@
 .content{
     width: 1356px;
-    height: 2000px;
+    height: 1500px;
     margin: 0 auto;
     background-image: url('../assets/back-ground.jpg');
     background-size: 100%;
@@ -46,44 +46,4 @@
     font-size: 16px;
     font-weight: bold;
     height: 25px;
-}
-
-.ct-h-ct,.ct-h-lf {
-    list-style-type: none;
-    margin-left: 20px;
-    border-right: 1px solid white;
-    padding-right: 20px;
-    cursor: pointer;
-}
-.ct-h-ct:hover,.ct-h-lf:hover{
-    color: white;
-    font-size: 18px;
-}
-.ct-h-rg {
-    display: flex;
-    list-style-type: none;
-    margin-left: 35.5%;
-}
-.ct-h-rg input{
-    padding:2px;
-    border: none;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border: 1px solid rgba(100, 99, 99, 0.493);
-    width: 300px;
-    height: 30px;
-}
-.ct-h-rg div{
-    background-color: rgb(230, 228, 228);
-    border: 1px solid rgba(100, 99, 99, 0.493);
-    padding: 1px;
-    width: 25px;
-    height: 26px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    cursor: pointer;
-}
-.hr-details{
-    margin-top: 20px;
-    width: 80%;
 }

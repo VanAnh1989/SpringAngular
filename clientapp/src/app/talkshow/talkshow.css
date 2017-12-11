@@ -1,0 +1,86 @@
+.talk-show-content {
+    float: right;
+    width: 39%;
+    clear: both;
+    border: 1px solid rgba(158, 155, 155, 0.849);
+    background-color: rgba(255, 255, 255, 0.233);
+    margin-top: 10px;
+    margin-right: 1%;
+}
+.tk-header{
+    background:linear-gradient(rgba(250, 247, 247, 0.329),rgba(20, 1, 1, 0.452),rgba(253, 252, 252, 0.479));
+    height: 30px;
+    text-align: right;
+}
+.hide-tk{
+    color: red;
+    font-size: 25px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.title-tk {
+    font-weight:bold;
+    color: white;
+    font-size: 18px;
+    margin-right: 35%; 
+}
+.tk-content{
+    height: 300px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    line-height: 1.2em;
+    padding: 5px 5px 150px 5px;
+}
+.tk-bottom{
+    height:40px; 
+    display: flex;
+    border-top: 1px solid white;
+    padding: 5px 5px 5px 5px;
+}
+.tk-txt{
+    resize: none;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    overflow: hidden;
+    border:1px solid white;
+}
+
+.btl-send{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(165, 161, 161);
+    width: 20%;
+    text-align: center;
+    background:linear-gradient(rgba(255, 255, 255, 0.507),rgb(10, 0, 0),rgba(255, 255, 255, 0.507));
+    cursor: pointer;
+    margin-left:5%; 
+    padding-top: 9px;
+}
+.btl-send:active{
+    background:linear-gradient(rgba(2, 0, 0, 0.507),rgb(247, 247, 247),rgba(0, 0, 0, 0.507));
+}
+.tk-ct-date{
+    color: red;
+    margin-left: 30px;
+}
+.tk-ct-txt{
+    margin-left: 20px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+.tk-ct-hd{
+    margin-top: 10px;
+    width: 250px;
+}
+.tk-ct-hd-my{
+    color: blue;
+    text-align: right;
+    margin-top: 10px;
+}
+.tk-ct-txt-my{
+    text-align: right;
+    padding-bottom: 10px;
+}

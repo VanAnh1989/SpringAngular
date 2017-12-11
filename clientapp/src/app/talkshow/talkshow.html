@@ -1,0 +1,18 @@
+<div class="talk-show-content">
+    <div class="tk-header">
+        <span class="title-tk">Góc chia sẻ </span><span class="hide-tk">X</span>
+    </div>   
+    <div class="tk-content">
+        <div *ngFor="let content of talkShow.userTalk">
+            <div class="tk-ct-hd" *ngIf="content.user != 'MyTalk'">{{content.user}} <span class="tk-ct-date">{{content.date}}</span></div>
+            <div class="tk-ct-txt" *ngIf="content.user != 'MyTalk'">{{content.content}}</div>
+            <div class="tk-ct-hd-my" *ngIf="content.user === 'MyTalk'">{{content.user}}<span class="tk-ct-date">{{content.date}}</span></div>
+            <div class="tk-ct-txt-my" *ngIf="content.user === 'MyTalk'">{{content.content}}</div>
+            <hr />
+        </div>
+    </div>
+    <div class="tk-bottom">
+        <textarea class="tk-txt" [(ngModel)]="content">Hi'Im is Anh</textarea>
+        <a class="btl-send" (click)="sendData()">Gửi</a>
+    </div>
+</div>
