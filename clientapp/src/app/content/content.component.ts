@@ -1,5 +1,5 @@
 import { Component , ViewChild , AfterViewInit} from '@angular/core';
-import { HomeDetails } from '../model/HomeDetails'; 
+import { DeclareData } from '../model/UserTalk'; 
 
 @Component({
   selector: 'app-content',
@@ -7,6 +7,18 @@ import { HomeDetails } from '../model/HomeDetails';
   styleUrls: ['../app.component.css','./content.css']
 })
 export class ContentComponent{
-    details : HomeDetails = new HomeDetails();
-    pagings : number[] = [1,2,3,4,5];
+    content : string="done";
+    usertalk : DeclareData = new DeclareData();
+    constructor(){
+      this.setTextEffect();
+    }
+    setTextEffect(){
+      let textNumber = 0;
+      setInterval(function(){
+        document.getElementsByClassName("ct-l-text")[0].innerHTML = ""+textNumber++;
+      },1000);
+    }
+
 }
+
+

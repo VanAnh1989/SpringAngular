@@ -1,18 +1,34 @@
 <div class="talk-show-content">
-    <div class="tk-header">
-        <span class="title-tk">Góc chia sẻ </span><span class="hide-tk">X</span>
-    </div>   
-    <div class="tk-content">
-        <div *ngFor="let content of talkShow.userTalk">
-            <div class="tk-ct-hd" *ngIf="content.user != 'MyTalk'">{{content.user}} <span class="tk-ct-date">{{content.date}}</span></div>
-            <div class="tk-ct-txt" *ngIf="content.user != 'MyTalk'">{{content.content}}</div>
-            <div class="tk-ct-hd-my" *ngIf="content.user === 'MyTalk'">{{content.user}}<span class="tk-ct-date">{{content.date}}</span></div>
-            <div class="tk-ct-txt-my" *ngIf="content.user === 'MyTalk'">{{content.content}}</div>
-            <hr />
+    <div class="ct-d-text">
+        <div *ngFor="let talk of talkShow.userTalk">
+            <div>
+                <span class="{{talk.color}} bold-text">{{talk.user}}</span>
+                <br />
+                <span class="red-color">{{talk.date}}</span>
+            </div>
+            <div class="tk-ct-talk">
+                <span>{{talk.content}}
+                    <img [src]="talk.icon" />
+                </span>
+            </div>
         </div>
     </div>
-    <div class="tk-bottom">
-        <textarea class="tk-txt" [(ngModel)]="content">Hi'Im is Anh</textarea>
-        <a class="btl-send" (click)="sendData()">Gửi</a>
+    <div class="ct-p-text">
+        <textarea [(ngModel)]="content">input here</textarea>
+        <div class="container-icon">
+            <img src="{{iconChoise}}" />
+        </div>
+        <div class="ct-btn">
+            <p class="btn-send" (click)="sendData()">Gửi</p>
+            <p class="btn-delete">delete</p>
+        </div>
+        <div>
+            <img src="./assets/face.png" (click)="openIconList('open')" class="icon-list-img"/>
+            <img src="./assets/attach.png" (click)="checkFile()" class="choose-file-img"/>
+            <div class="icon-list {{classIcon}}" (mouseleave)="openIconList('close')">
+                <img *ngFor="let icon of urls" src="{{icon}}" width="20" height="20" class="small-icon" (click)="chooseIcon(icon)"/>
+            </div>
+            <input type="file" #file id="chooseFile" hidden (change)="setFileS(file)" />
+        </div>
     </div>
 </div>
