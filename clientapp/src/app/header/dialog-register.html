@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Hi</h1>
+<div mat-dialog-content class="myclass">
+    <mat-form-field>
+        <input matInput tabindex="1" placeholder="User"/>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+       <input matInput tabindex="2" placeholder="Pass"/>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button>Ok</button>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>

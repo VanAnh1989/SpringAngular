@@ -4,7 +4,7 @@ import { HeaderModule } from './header/header.module';
 import { ContentModule } from './content/content.module';
 import { AppComponent } from './app.component';
 import { FooterModule } from './footer/footer.module';
-
+import { UserSerVice} from './service/UserService';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { FooterModule } from './footer/footer.module';
   imports: [
     HeaderModule,ContentModule,FooterModule
   ],
-  providers: [],
+  providers: [UserSerVice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
